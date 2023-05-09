@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <title>Style Jóias</title>
+        <link rel="icon" href="img/2-removebg-preview (1).png" type="image/x-icon"> <!--icone-->
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style/style_home_page.css"> <!--Style navbar-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style/style_home_page_2.css">
+
+        <!-- Biblioteca -->
+        <link rel="stylesheet" href="libs/flickity-docs.css">
+        <script src="libs/flickity-docs.min.js"></script>
+    </head>
+    <body>
+        <div id="barra_abrir_menu">
+            <a href="index.html"><img id="logo" src="img/1-removebg-preview.png" alt="Logo"></a>
+            <div id="menuToggle" onclick="menu_telap()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <nav id="menu_todo" class="no_active">
+            <a href="index.html"><img id="logo" src="img/1-removebg-preview.png" alt="Logo"></a>
+            <ul>
+                <li  id="menu_suspenso_produtos">
+                    <div style="display:flex; flex-direction: row; align-items: center; justify-content: center;">
+                        <div>Produtos </div>
+                        <span class="arrow" onclick="toggleArrow()"></span>
+                    </div>
+                    <div id="lista_produtos">
+                        <ul>
+                            <a href="todos_produtos.html"><li style="margin:5px;">Todos</li></a>
+                            <li style="margin:5px;">Aneis</li>
+                            <li style="margin:5px;">Alianças</li>
+                            <li style="margin:5px;">Colares</li>
+                            <li style="margin:5px;">Pulseiras</li>
+                            <li style="margin:5px;">Brincos</li>
+                            <li style="margin:5px;">Correntes</li>
+                            <li style="margin:5px;">Pingentes</li>
+                        </ul>
+                    </div>
+                </li>
+                <a href="carrinho.html"><li>
+                    <div class="menu_text">Carrinho</div>
+                    <img class="img_menu" src="img/carrinho-de-compras.png" width="48px" height="50px">
+                </li></a>
+                <!-- menu supenso perfil  -->
+                <li id="menu_suspenso_perfil">
+                    <div style="display:flex; flex-direction: row; align-items: center; justify-content: center;">
+                        <div class="menu_text">Perfil</div>
+                        <img class="img_menu" src="img/perfil-de-usuario.png" width="48px" height="50px">
+                    </div>
+                    <div id="lista_op_perfil"> 
+                        <ul>
+                            <a href="login.html"><li style="margin:5px;">Login</li></a>
+                            <a href="cadastro.html"><li style="margin:5px;">Cadastro</li></a>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <section id="campanha1">
+            
+        </section>
+
+        <section id="sobre_nos">
+            <h1>Sobre nós</h1>
+            <div id="sobre_nos2"> 
+                <img src="img/sobre_nos.webp">
+                <div id="sobre_nos3">
+                    <p>Bem-vindo à nossa loja de joias, uma tradição familiar que vem sendo passada de geração em geração há muitos anos. Aqui, você encontrará uma grande variedade de joias finas, todas com um toque especial de tradição e história.</p>
+
+                    <p>Com anos de experiência no mercado de joias, nossa loja se destaca pela qualidade e exclusividade de suas peças, e por oferecer um atendimento personalizado e de excelência a cada um de nossos clientes. Venha nos visitar e descubra a beleza das joias finas que são feitas com tradição e história. Estamos ansiosos para recebê-lo em nossa loja de joias familiar.</p>
+                    <button>Ver catalogo</button>
+                </div>
+            </div>
+            
+        </section>
+        <section id="amor_joia">
+            <h1>Demonstre o seu amor em forma de joia</h1>
+            <div class="carousel_todo">
+                <button class="carousel_todo_botao_prev" type="button"> « </button>
+                <div class="carrosel_itens">
+                    <!-- item 1  -->
+                    <!-- <div class="itens_carrosel_produtos_amor_joia">
+                        <p>Nome do produto</p>
+                        <img src="img/foto_produto.png">
+                        <div class="itens_carrosel_produtos_amor_joia_preco_carrinho">
+                            <p>R$100,00</p>
+                            <img src="img/adicionar-ao-carrinho.png">
+                        </div>
+
+                    </div> -->
+                    <div class="main-carousel">
+                        <div class="carousel-cell">
+                            Slide 2
+                        </div>
+                        <div class="carousel-cell">Slide 2</div>
+                        <div class="carousel-cell">Slide 3</div>
+                        <!-- ... adicione mais slides conforme necessário ... -->
+                    </div>
+                </div>
+                <button class="carousel_todo_botao_next" type="button"> » </button>
+            </div>
+            <button id="amor_joia_ver_tudo">Ver tudo</button>
+        </section>
+        <section id="contato">
+            <h1>Entre em contato conosco:</h1>
+            <form id="formulario_contato">
+                <div class="form_2campos">
+                    <input type="text" placeholder="Nome">
+                    <input type="email" placeholder="Email">
+                </div>
+                <textarea placeholder="Breve menssagem"></textarea>
+                <input type="button" value="Enivar menssagem" id="bt_enviar_formulario">
+            </form>
+
+        </section>
+
+        <footer id="rodape">
+            <p>Desenvolvido por: Anny Duarte, Bruna Gontijo e Eduarda Leandra</p>
+        </footer>
+
+
+    </body>
+    <script src="script/script1.js"></script>
+    
+</html>

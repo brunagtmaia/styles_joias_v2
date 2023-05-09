@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+#conteiner_menu{
+    /* direção e alinhamento de elementos */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* tamanho */
+    width: 650px;
+    height: auto;
+    /* posição */
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* estilo */
+    background-color: white;
+    box-shadow: 5px 10px 9px 8px rgba(0, 0, 0, 0.377);
+    border-radius: 20px;
+    padding: 20px;
+    font-family: 'Montserrat';
+}
+#conteiner_menu h1{
+    font-size: 45px;
+    border-bottom: 3px solid black;
+}
+#conteiner_menu form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#form_campos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    margin-bottom: 20px;
+}
+#form_campos input{
+    width:70%;
+    height: 60px;
+    background-color: #D9D9D9;
+    border:none;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#form_campos input::placeholder{
+    font-size: 25px;
+    align-self: center;
+    justify-self: center;
+    padding-left: 10px;
+}
+
+#form_botoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    margin-bottom: 20px;
+}
+#form_botoes input{
+    width:70%;
+    height: 60px;
+    background-color: #FFA7D1;
+    border:none;
+    border-radius: 30px;
+    margin: 20px;
+    font-size: 25px;
+    align-self: center;
+    justify-self: center;
+    color:black;
+    font-family: 'Montserrat';
+}
+
+

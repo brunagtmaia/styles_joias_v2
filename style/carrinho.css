@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* tela grande */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+#itens_do_carrinho{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+#itens_do_carrinho h1{
+    font-size: 45px;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 3px solid black;
+}
+.carrinho_item{
+    width:70%;
+    height: auto;
+    border: 1px solid #FFA7A7;
+    border-radius: 20px;
+    margin:30px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.nome_preço_remover{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 30px;
+}
+.preco_produto{
+    font-weight: bold;
+}
+.bt_remover_carrinho{
+    width: 100%;
+    height: 40px;
+    background-color: #FFA7D1;
+    border:none;
+    border-radius: 30px;
+    align-self: center;
+    font-size: 20px;
+    font-family: 'Montserrat';
+}
+.nome_preço_remover p{
+    margin:10px;
+}
+#bt_finalizar_pedido{
+    width: 300px;
+    height: 50px;
+    background-color: #FFA7D1;
+    border:none;
+    border-radius: 30px;
+    align-self: center;
+    font-size: 30px;
+}
