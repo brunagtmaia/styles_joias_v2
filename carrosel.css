@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+#campanha1{
+    padding-top: 100px;
+}
+#campanha1 .carousel {
+    background: #EEE;
+    
+}
+  
+#campanha1 .carousel-cell {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: white;
+}
+  
+#campanha1 .carousel-cell:before {
+    content: none; /* Define o conteúdo como vazio */
+}
+  
+#campanha1 .carousel-cell img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* pasando produtos */
+#amor_joia{
+    margin:50px;
+}
+#amor_joia h1{
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+    margin: 30px;
+}
+#amor_joia .carousel-cell{
+    width: 300px;
+    height: 500px;
+    margin-right: 10px;
+    /* margin-bottom: 10px; */
+    background: #FFA7D1;
+    border: 1px solid #FFA7D1;
+    border-radius: 5px;
+}
+#amor_joia .carousel-cell.is-selected {
+    background: rgb(255, 255, 255);
+} 
+#amor_joia .carousel-cell:before {
+    content: none; /* Define o conteúdo como vazio */
+}
+
+
+
+.itens_carrosel_produtos_amor_joia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } 
+  .itens_carrosel_produtos_amor_joia img{
+    width:250px;
+    height: 250px;
+  }
+  .itens_carrosel_produtos_amor_joia p{
+    font-size:25px;
+    font-weight: bold;
+    padding: 20px;
+    align-self: center;
+    color: black;
+  }
+  .itens_carrosel_produtos_amor_joia_preco_carrinho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+  }
+  .itens_carrosel_produtos_amor_joia_preco_carrinho img{
+    width:40px;
+    height: 40px;
+    padding-right: 50px;
+  }
+  .itens_carrosel_produtos_amor_joia_preco_carrinho p{
+    font-size: 30px;
+    font-weight: 900;
+    padding-left: 50px;
+  }
+  
