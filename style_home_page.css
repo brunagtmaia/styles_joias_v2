@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* tela grande */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+nav a{
+    text-decoration: none;
+    color:black;
+}
+nav{
+    z-index: 1000;
+}
+/* menu de tela qrande */
+#menu_todo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    box-shadow: 0px 1px 100px 1px rgba(0, 0, 0, 0.281);
+    font-size: 40px;
+}
+#menu_todo ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+#menu_todo li{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 20px
+}
+/* setinha de produtos  */
+.arrow1 {
+    position: relative;
+    cursor: pointer;
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: solid #000;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+    margin-left: 5px;
+}
+
+#barra_abrir_menu{
+    display: none;
+}
+.menu_text{
+    display:none;
+} 
+
+
+
+/* lista suspença de produtos */
+#lista_produtos{
+    display: none;
+    width:274px;
+    height: auto;
+    background-color: white;
+    box-shadow: 1px 1px 10px 1px black;
+    top:8%;
+    border-radius: 10px;
+} 
+#menu_suspenso_produtos:hover #lista_produtos{
+    display: block;
+    position: fixed;
+} 
+#lista_produtos ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    list-style-type:none;
+    font-size: 35px;
+    margin:0;
+    padding: 0;
+}
+#lista_prudutos li{
+    margin:0;
+    padding: 0;
+}
+#lista_produtos li:hover{
+    color:#FFA7D1;
+}
+#menu_suspenso_produtos:hover .arrow1{
+    transform: rotate(-135deg);
+}
+
+/* lista suspença de perfil */
+#lista_op_perfil{
+    display: none;
+    width:200px;
+    height: auto;
+    background-color: white;
+    box-shadow: 1px 1px 10px 1px black;
+    top:8%;
+    right: 0;
+    border-radius: 10px;
+}
+#menu_suspenso_perfil:hover #lista_op_perfil{
+    display: block;
+    position: fixed;
+} 
+
+#lista_op_perfil ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    list-style-type:none;
+    font-size: 35px;
+    margin:0;
+    padding: 0;
+}
+#lista_op_perfil li{
+    margin:0;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+#lista_op_perfil li:hover{
+    color:#FFA7D1;
+}
+
+/* tela pequena  */
+@media(max-width:560px){
+    /* barra para abir o menu */
+    #barra_abrir_menu{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        position: fixed;
+        align-items: center;
+        width: 100%;
+        height: 90px;
+        background-color: white;
+        box-shadow: 0px 1px 100px 1px rgba(0, 0, 0, 0.486);
+        font-size: 40px;
+        z-index: 1000;
+    }
+    /* icone de menu */
+    #menuToggle {
+        width: 40px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-right: 20px;
+        cursor: pointer;
+    }
+      
+    #menuToggle span {
+        width: 100%;
+        height: 4px;
+        background-color: black;
+        transition: transform 0.3s, opacity 0.3s;
+    }
+      
+    #menuToggle.active span:nth-child(1) {
+        transform: rotate(50deg) translate(9px, 11px)
+    }
+      
+    #menuToggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+      
+    #menuToggle.active span:nth-child(3) {
+        transform: rotate(-50deg) translate(7px, -6px);
+    }
+   /* menu lateral */
+    #menu_todo{
+        display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 223px;
+        height: 100%;
+        position: fixed;
+        left:-300px;
+        top:0;
+        margin: 0;
+        padding: 0;
+        transition: transform 1s;
+    }
+    /* menu ativo */
+    #menu_todo.active{
+        display: flex;
+        transform: translateX(300px);
+    }
+    #menu_todo ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0;
+        margin:0;
+    }
+    #menu_todo li{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: 20px;
+        font-size: 25px;
+    }
+    /* seta para menu suspenso */
+    .arrow1 {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+    }
+    #menu_suspenso_produtos:hover .arrow1{
+        transform: rotate(-40deg);
+    }
+    .img_menu{
+        display:none;
+    }
+    .menu_text{
+        display:flex;
+    }
+    /* lista de produtos */
+    #menu_todo li#menu_suspenso_produtos:hover #lista_produtos {
+        display: block;
+    }
+    #lista_produtos{
+        display: none;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 90%;
+        width: 200px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    /* lista perfil */
+    #menu_todo li#menu_suspenso_perfil:hover #lista_op_perfil {
+        display: block;
+    }
+    #lista_op_perfil{
+        display: none;
+        background-color: #fff;
+        position: absolute;
+        bottom: 10%;
+        left: 90%;
+        width: 200px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+}
+
+@media(max-width:849px){
+    #menu_todo li{
+        font-size: 33px;
+    }
+    #menu_todo li img{
+        width:40px;
+        height:40px;
+    }
+    .arrow1{
+        width: 15px;
+        height: 15px;
+    }
+    #logo{
+        width: 100px;
+        height: 50px;
+    }
+    /* lista de produtos - menu */
+    #lista_produtos{
+        font-size: 33px;
+        top:7%;
+    }
+    /* lista de perfil - menu */
+    #lista_op_perfil{
+        font-size: 33px;
+        top:7%;
+    }
+}
+
+#rodape{
+    width:100%;
+    height: auto;
+    background-color: #D9D9D9;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:0;
+}
+#rodape p{
+    font-size: 32px;
+    padding: 20px;
+    text-align: center;
+}
+
