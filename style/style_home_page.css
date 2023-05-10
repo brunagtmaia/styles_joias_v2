@@ -40,7 +40,7 @@ nav{
     margin: 20px
 }
 /* setinha de produtos  */
-.arrow {
+.arrow1 {
     position: relative;
     cursor: pointer;
     content: "";
@@ -67,7 +67,7 @@ nav{
 #lista_produtos{
     display: none;
     width:274px;
-    height: 416px;
+    height: auto;
     background-color: white;
     box-shadow: 1px 1px 10px 1px black;
     top:8%;
@@ -94,7 +94,7 @@ nav{
 #lista_produtos li:hover{
     color:#FFA7D1;
 }
-#menu_suspenso_produtos:hover .arrow{
+#menu_suspenso_produtos:hover .arrow1{
     transform: rotate(-135deg);
 }
 
@@ -102,7 +102,7 @@ nav{
 #lista_op_perfil{
     display: none;
     width:200px;
-    height: 120px;
+    height: auto;
     background-color: white;
     box-shadow: 1px 1px 10px 1px black;
     top:8%;
@@ -218,12 +218,12 @@ nav{
         font-size: 25px;
     }
     /* seta para menu suspenso */
-    .arrow {
+    .arrow1 {
         position: relative;
         display: inline-block;
         cursor: pointer;
     }
-    #menu_suspenso_produtos:hover .arrow{
+    #menu_suspenso_produtos:hover .arrow1{
         transform: rotate(-40deg);
     }
     .img_menu{
@@ -270,7 +270,7 @@ nav{
         width:40px;
         height:40px;
     }
-    .arrow{
+    .arrow1{
         width: 15px;
         height: 15px;
     }

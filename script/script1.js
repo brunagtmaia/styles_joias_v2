@@ -1,5 +1,5 @@
 function toggleArrow() {
-    var arrow = document.querySelector('.arrow');
+    var arrow = document.querySelector('.arrow1');
     arrow.classList.toggle('active');
 }
 // menu de tela pequena
@@ -15,11 +15,11 @@ function menu_telap() {
 
 
 // Aguarde até que o DOM esteja pronto
-document.addEventListener("DOMContentLoaded", function() {
-  // Inicialize o carrossel
-  var carousel = new Flickity('.main-carousel', {
-      groupCells: true,
-      // ... outras opções do Flickity, se necessário ...
-  });
-});
+// document.addEventListener("DOMContentLoaded", function() {
+//   // Inicialize o carrossel
+//   var carousel = new Flickity('.main-carousel', {
+//       groupCells: true,
+//       // ... outras opções do Flickity, se necessário ...
+//   });
+// });
 

@@ -5,14 +5,14 @@ body{
     font-family: 'Montserrat';
 }
 /* tela grande */
-#campanha1{
+/* #campanha1{
     width: 100%;
     height: 500px;
     padding-top: 90px;
     background-image: url('img2/https___lojavivara.vtexassets.com_assets_vtex.file-manager-graphql_images_1bfc4ae1-0a87-4ca4-aae0-6f42dacc9cca___ba23a5ac7d5529c77b26d219f1802305.webp');
     background-position: left;
     background-size: cover;
-}
+} */
 #sobre_nos{
     display: flex;
     flex-direction: column;
@@ -24,11 +24,17 @@ body{
     align-self: flex-start;
     font-size: 64px;
     font-weight: 9000;
+    @media(max-width:849px){
+        font-size: 45px;
+    }
 }
 #sobre_nos2{
     display: flex;
     flex-direction: row;
     padding: 30px;
+    @media(max-width:849px){
+        flex-direction: column
+    }
 }
 #sobre_nos3{
     display: flex;
@@ -50,84 +56,7 @@ body{
     align-self: center;
 }
 
-#amor_joia{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-}
-#amor_joia h1{
-    font-size: 30px;
-    border-bottom: 3px solid black;
-    padding: 10px;
-}
-#amor_joia_ver_tudo{
-    width: 365px;
-    height: 77px;
-    font-size: 32px;
-    background-color: #FFA7D1;
-    align-self: self-end;
-    border:none;
-    border-radius: 50px;
-}
-/* carrosel  */
-.carousel_todo{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    padding: 20px;
-}
-.carrosel_itens{
-    display: flex;
-    flex-direction: row;
-}
-.itens_carrosel_produtos_amor_joia{
-    width:350px;
-    height: 500px;
-    border: 1px solid #FF5AD1;
-    border-radius: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.itens_carrosel_produtos_amor_joia img{
-    width:250px;
-    height: 250px;
-}
-.itens_carrosel_produtos_amor_joia p{
-    font-size:30px;
-    font-weight: bold;
-    padding: 20px;
-    align-self: center;
-}
-.itens_carrosel_produtos_amor_joia_preco_carrinho{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width:100%;
-    
-    
-}
-.itens_carrosel_produtos_amor_joia_preco_carrinho img{
-    width:50px;
-    height: 50px;
-    padding-right: 50px;
-}
-.itens_carrosel_produtos_amor_joia_preco_carrinho p{
-    font-size: 30px;
-    font-weight: 900;
-    padding-left: 50px;
-}
-/* botão de passar produtos */
-.carousel_todo_botao_prev{
-    border:none;
-    
-}
+
 /* entre em contato */
 #contato{
     display: flex;
@@ -145,10 +74,20 @@ body{
     display: flex;
     flex-direction: column;
     padding: 50px;
+    @media(max-width:849px){
+        width:100%;
+        padding:10px;
+    }
 }
 .form_2campos{
     display: flex;
     flex-direction: row;
+    width:100%;
+    @media(max-width:849px){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 .form_2campos input{
     width:550px;
@@ -157,6 +96,9 @@ body{
     border: none;
     border-radius: 20px;
     margin:30px;
+    @media(max-width:849px){
+        width:80%;
+    }
 }
 .form_2campos input::placeholder{
     font-size:25px;
@@ -176,6 +118,9 @@ body{
     border: none;
     border-radius: 20px;
     margin:30px;
+    @media(max-width:849px){
+        width:80%;
+    }
 }
 #formulario_contato textarea::placeholder{
     font-size:25px;
@@ -194,3 +139,8 @@ body{
     border:none;
     border-radius: 50px;
 }
+@media(max-width:849px){
+
+}
+
+
