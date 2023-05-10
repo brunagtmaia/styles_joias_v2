@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+#conteiner_menu{
+        /* direção e alinhamento de elementos */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:80%;
+        height: auto;
+        padding-top: 90px;
+        /* posição */
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* estilo */
+        font-family: 'Montserrat';
+        @media(max-width:849px){
+            width:100%;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+}
+#conteiner_menu h1{
+    font-size: 35px;
+    border-bottom: 3px solid black;
+    padding:10px;
+    justify-self: flex-start;
+}
+#conteiner_menu form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.form_campos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    margin-bottom: none;
+    flex-wrap: wrap;
+    @media(max-width:849px){
+        flex-direction: column;
+    }
+}
+.form_campos input{
+    width:40%;
+    height: 60px;
+    background-color: #D9D9D9;
+    border:none;
+    border-radius: 30px;
+    margin:20px;
+    margin-bottom: none;
+}
+.form_campos input::placeholder{
+    font-size: 25px;
+    align-self: center;
+    justify-self: center;
+    padding-left: 10px;
+}
+
+#form_botoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    margin-bottom: 20px;
+}
+#form_botoes input{
+    width:70%;
+    height: 60px;
+    background-color: #FFA7D1;
+    border:none;
+    border-radius: 30px;
+    margin: 20px;
+    font-size: 25px;
+    align-self: center;
+    justify-self: center;
+    color:black;
+    font-family: 'Montserrat';
+}
+
+

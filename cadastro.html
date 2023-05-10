@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>Style Jóias</title>
+        <link rel="icon" href="img/2-removebg-preview (1).png" type="image/x-icon"> <!--icone-->
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style/style_home_page.css"> <!--Style navbar-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style/cadastro.css">
+
+        <!--Botstrap-->
+        <link rel="stylesheet" href="easycarousel.css">
+    </head>
+    <body>
+        <div id="barra_abrir_menu">
+            <a href="index.html"><img id="logo" src="img/1-removebg-preview.png" alt="Logo"></a>
+            <div id="menuToggle" onclick="menu_telap()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <nav id="menu_todo" class="no_active">
+            <a href="index.html"><img id="logo" src="img/1-removebg-preview.png" alt="Logo"></a>
+            <ul>
+                <li  id="menu_suspenso_produtos">
+                    <div style="display:flex; flex-direction: row; align-items: center; justify-content: center;">
+                        <div>Produtos </div>
+                        <span class="arrow1" onclick="toggleArrow()"></span>
+                    </div>
+                    <div id="lista_produtos">
+                        <ul>
+                            <a href="todos_produtos.html"><li style="margin:5px;">Todos</li></a>
+                            <li style="margin:5px;">Aneis</li>
+                            <li style="margin:5px;">Alianças</li>
+                            <li style="margin:5px;">Colares</li>
+                            <li style="margin:5px;">Pulseiras</li>
+                            <li style="margin:5px;">Brincos</li>
+                            <li style="margin:5px;">Correntes</li>
+                            <li style="margin:5px;">Pingentes</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu_text">Carrinho</div>
+                    <img class="img_menu" src="img/carrinho-de-compras.png" width="48px" height="50px">
+                </li>
+                <!-- menu supenso perfil  -->
+                <li id="menu_suspenso_perfil">
+                    <div style="display:flex; flex-direction: row; align-items: center; justify-content: center;">
+                        <div class="menu_text">Perfil</div>
+                        <img class="img_menu" src="img/perfil-de-usuario.png" width="48px" height="50px">
+                    </div>
+                    <div id="lista_op_perfil"> 
+                        <ul>
+                            <a href="login.html"><li style="margin:5px;">Login</li></a>
+                            <a href="cadastro.html"><li style="margin:5px;">Cadastro</li></a>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div id="conteiner_menu">
+            <form>
+                <h1>Cadastro</h1>
+                <div class="form_campos">
+                    <input type="text" placeholder="Nome" required>
+                    <input type="email"  placeholder="Email" required>
+                </div>
+                <div class="form_campos">
+                    <input type="text" placeholder="Estado" required>
+                    <input type="text"  placeholder="Cidade" required>
+                </div>
+                <div class="form_campos">
+                    <input type="text" placeholder="Rua" required>
+                    <input type="number"  placeholder="Numero" required>
+                </div>
+                <div class="form_campos">
+                    <input type="number" placeholder="CEP" required>
+                    <input type="password"  placeholder="Senha" required>
+                </div>
+                <div id="form_botoes">
+                    <input type="button" value="Cadastre-se">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
