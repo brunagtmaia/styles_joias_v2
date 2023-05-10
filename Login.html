@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <title>Formulário de Cadastro</title>
-  <link rel="stylesheet" type="text/css" href="style/cadastro.css">
+  <head>
+    <title>Formulário de Login</title>
+    <link rel="stylesheet" type="text/css" href="style/login.css">
   </head>
   <body>
     <div id="barra_abrir_menu">
@@ -54,25 +53,22 @@
           </li>
       </ul>
   </nav>
-  <div class="container">
-    <form>
-      <center><h1>Cadastro</h1></center>
-      <div class="form-grid">
-        <div class="form-column">
-          <input type="text" id="nome" placeholder="Nome">
-          <input type="text" id="estado" placeholder="Estado">
-          <input type="text" id="rua" placeholder="Rua">
-          <input type="text" id="cep" placeholder="CEP">
+    <main>
+        <center>
+      <form id="login">
+        <h2 id="titulo-login">Login</h2>
+        <div class="campo-form">
+          <input type="email" id="email" name="email" placeholder="Email">
         </div>
-        <div class="form-column">
-          <input type="email" id="email" placeholder="Email">
-          <input type="text" id="cidade" placeholder="Cidade">
-          <input type="text" id="numero" placeholder="Número">
-          <input type="password" id="senha" placeholder="Senha">
+        <div class="campo-form">
+          <input type="password" id="senha" name="senha" placeholder="Senha">
         </div>
-      </div>
-      <button type="submit" id="cadastrar">Cadastre-se</button>
-    </form>
-  </div>
-</body>
+        <div class="botoes">
+          <center><input type="submit" id="entrar" value="Entrar"></center>
+          <center><input type="button" id="cadastro" value="Cadastre-se"></center>
+        </div>
+      </form>
+    </center>
+    </main>
+  </body>
 </html>
